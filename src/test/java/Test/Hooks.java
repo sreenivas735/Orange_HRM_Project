@@ -28,11 +28,11 @@ public class Hooks {
         String app_url = prop.getProperty("application_url");
 
         if (browser.equals("edge")) {
-            System.setProperty("webdriver.edge.driver", path + "\\msedgedriver.exe");
+            System.setProperty("webdriver.edge.driver", path + "/msedgedriver.exe");
             driver = new EdgeDriver();
 
         } else if (browser.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", path + "\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", path + "/chromedriver.exe");
             driver = new ChromeDriver();
         } else {
             throw new InvalidObjectException("driver not found");
