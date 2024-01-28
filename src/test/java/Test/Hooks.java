@@ -31,6 +31,8 @@ public class Hooks {
 
 
 
+        File file2 = new File(path+"/msedgedriver.exe");
+        System.out.println(file2.exists());
 
         if (browser.equals("edge")) {
             System.setProperty("webdriver.edge.driver",  path+"/msedgedriver.exe");
