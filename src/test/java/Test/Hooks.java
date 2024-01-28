@@ -33,11 +33,11 @@ public class Hooks {
 
 
         if (browser.equals("edge")) {
-            System.setProperty("webdriver.edge.driver",  "/msedgedriver.exe");
+            System.setProperty("webdriver.edge.driver",  path+"/msedgedriver.exe");
             driver = new EdgeDriver();
 
         } else if (browser.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "/msedgedriver.exe");
+            System.setProperty("webdriver.chrome.driver", path+"/msedgedriver.exe");
             driver = new ChromeDriver();
         } else {
             throw new InvalidObjectException("driver not found");
