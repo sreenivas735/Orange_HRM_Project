@@ -18,7 +18,8 @@ public class Hooks {
     @Before
     public void presteps() throws Exception {
         String path = System.getProperty("user.dir");
-        File file = new File(path + "\\Orange_HRM.properties");
+        System.out.println(path);
+        File file = new File(path + "/Orange_HRM.properties");
         FileReader reader = new FileReader(file);
 
         Properties prop = new Properties();
